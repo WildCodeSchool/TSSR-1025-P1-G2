@@ -47,12 +47,19 @@
 **Matériel**
 
 **Logiciel**
+*John the ripper* : est un outil open source conçu pour casser des mots de passe, c’est-à-dire retrouver le mot de passe original à partir de son empreinte (ou _hash_). Il fonctionne en testant rapidement des milliers, voire des millions de combinaisons, grâce à différentes techniques comme les attaques par dictionnaire ou force brute.
+
+photo : install john the ripper 1
 
 
 # 🧗 Difficultés rencontrées
+
+*John the ripper* ,pour une attaque par dictionnaire la liste original de *John* est trop limité,
 <span id="difficultes-rencontrees"></span>
 
 # 💡 Solutions trouvées
+
+*john* = téléchargement d'une wordlist plus conséquentes pour que l'attaque soit plus efficace
 <span id="solutions-trouvees"></span>
 
 # 🚀 Améliorations possibles
