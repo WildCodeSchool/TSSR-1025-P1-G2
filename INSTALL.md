@@ -84,7 +84,7 @@ ______
 ## Point de montage repertoire entre *Windows* et *Linux*
 _______
 
-1. Installé **Samba** sur votre distribution **Linux**
+Installé **Samba** sur votre distribution **Linux**
    
    -Installons le paquet *Samba* avec cette ligne de commande :
 
@@ -101,15 +101,14 @@ sudo systemctl enable smdb
 
 ```
 
----
+Création du dossier partagé sur *Windows*
 
- 2. Création du dossier partagé sur *Windows*
     
-    Pour ce projet on va créé un dossier **C:\Commun**
+Pour ce projet on va créé un dossier **C:\Commun**
 
-	-On commence par créé le dossier à partir de l'Explorateur de fichiers:
+On commence par créé le dossier à partir de l'Explorateur de fichiers:
 	
-		Clic droit **Nouveau > Dossier.
+Clic droit **Nouveau > Dossier.
 	
 
 ![image](Ressources/dossier_partager_windows.png)	
@@ -124,18 +123,17 @@ Faire un clic droit sur le dossier **Commun**,puis sélectionnez **Propriété**
 
 
 Cliquez sur l'onglet **Partage** ,puis **Partage avancé** et enfin cochez la case **Partage ce dossier**.Conservez le nom par defaut.
-	
----
-			photo : partage_avancé
----
+
+
+![image](Ressources/partage_avancé.png)
 
 	
-		2.3 Cliquez sur **Autorisation**
-		   
-		   Veuillez à ajouter l'utilisateur qui doit avoir acces au partage,en lui donnant les autorisations de **Controle total**.
----
+Cliquez sur **Autorisation**
+	   
+Veuillez à ajouter l'utilisateur qui doit avoir acces au partage,en lui donnant les autorisations de **Controle total**.
+
 		photo : autorisation
----
+
 
 		2.4 Derniere manipulation sur **Windows** cliquez sur l'onglet **Sécurité**.Ajoutez l'utilisateur également ici et lui octroyer également toutes les autorisations à cet endroit.
 
