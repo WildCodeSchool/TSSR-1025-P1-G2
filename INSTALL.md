@@ -76,13 +76,14 @@ Comme vous le voyez le fichier est compressé voici la commande pour le décompr
 
 ```
 tar -xzf rockyou.txt.tar.gz 
-
 ```
 
 
-______
-## Point de montage repertoire entre *Windows* et *Linux*
-_______
+---
+-**POINT DE MONTAGE REPERTOIRE ENTRE WINDOWS ET LINUX**
+---
+
+
 
 Installé **Samba** sur votre distribution **Linux**
    
