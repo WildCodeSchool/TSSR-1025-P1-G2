@@ -175,12 +175,8 @@ Commande à éxecuter pour lister le contenu de notre dossier Commun
 ls -l /mnt/Commun
 ```
 
+![image](Ressources/apercu-commun_win01.png)
 
----
-
-photo apercu_win01
-
----
 
 Il faut également  faire un point de montage avec le **Serveur Windows**
 
