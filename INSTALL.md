@@ -132,14 +132,14 @@ Cliquez sur **Autorisation**
 	   
 Veuillez à ajouter l'utilisateur qui doit avoir acces au partage,en lui donnant les autorisations de **Controle total**.
 
-		photo : autorisation
+![photo](Ressources/autorisation.png)
 
 
-		2.4 Derniere manipulation sur **Windows** cliquez sur l'onglet **Sécurité**.Ajoutez l'utilisateur également ici et lui octroyer également toutes les autorisations à cet endroit.
+Derniere manipulation sur **Windows** cliquez sur l'onglet **Sécurité**.Ajoutez l'utilisateur également ici et lui octroyer également toutes les autorisations à cet endroit.
 
----
+
 		photo sécurité
----
+
 
 3. Création du dossier partagé et monter le partage dans le système de fichier dans votre distribution *Linux*
 
