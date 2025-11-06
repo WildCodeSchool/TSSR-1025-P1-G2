@@ -26,37 +26,189 @@ _________
 
  Voici la ligne de commande pour l'installation de *John the ripper* :
 
-	```
+
 	 sudo snap install john-the-ripper
-	```	
+
 	
 - Cette méthode a le mérite d'installer une version récente et embarque davantage de bibliothèque, également plus de format supporté . Les mises à jour sont automatique.
 	 - une fois la commande exécuté vous devriez avoir ce message :
 	
-		 photo install john ok
+		 photo: install_john_ok
 
 Si la commande **snap** ne fonctionne pas ,c'est parce que le paquet snap n'est pas installé sur votre distribution *Linux*
 
 Dans ce cas veuillez tapé cette commande :
 
-	```
+
 	sudo apt install snap
-	```
+
+
 
 Une fois le paquet snap installé reporté vous au paragraphe 2 pour installé le logiciel *John the ripper*.
 
 Ensuite il faut téléchargé une wordlist plus conséquente pour utilisé *john* tapons cette commande :
 
+        sudo snap install seclists
+
+---
+
+      photo : install_seclist_ok
+
+
+Une fois *seclists* installé il faut aller chercher les listes de dictionnaire que nous avons besoins, nous en avons sélectionné deux :
+
+La liste "000webhost.txt" :
+
 ```
-sudo snap install seclists
+cp /snap/seclists/1214/Passwords/Leaked-Databases/000webhost.txt ~/Documents/000webhost.txt
+
+```
+
+La liste "rockyou.txt" :
+
+```
+cp /snap/seclists/1214/Passwords/Leaked-Databases/rockyou.txt.tar.gz ~/Documents/rockyou.txt.tar.gz
+
+```
+
+Comme vous le voyez le fichier est compressé voici la commande pour le décompréssé :
+
+```
+tar -xzf rockyou.txt.tar.gz 
+
 ```
 
 
-      photo : install seclist
+______
+## Point de montage repertoire entre *Windows* et *Linux*
+_______
+
+1. Installé **Samba** sur votre distribution **Linux**
+   
+   -Installons le paquet *Samba* avec cette ligne de commande :
+
+```
+sudo apt install samba
+
+```
+
+   -Activons le service,ainsi il va demarrer automatiquement au demarrage de la machine avec cette commande :
 
 
-Dernière commande avant de pouvoir utiliser  *john* , on copie une liste de **Mots De Passe** sur notre bureau :
+```
+sudo systemctl enable smdb
+
+```
+
+---
+
+ 2. Création du dossier partagé sur *Windows*
+    
+    Pour ce projet on va créé un dossier **C:\Commun**
+
+	-On commence par créé le dossier à partir de l'Explorateur de fichiers:
+	
+		Clic droit **Nouveau > Dossier.
+	
+	---
+	
+			photo : dossier_partager_windows
+---
+	-Pour partagé le dossier suivons les étapes suivantes :
+		
+		2.1 Faire un clic droit sur le dossier **Commun**,puis sélectionnez **Propriété**
+---
+		photo : propriete_de_commun
+
+---
 
 
+		2.2 Cliquez sur l'onglet **Partage** ,puis **Partage avancé** et enfin cochez la case **Partage ce dossier**.Conservez le nom par defaut.
+	
+---
+			photo : partage_avancé
+---
+
+	
+		2.3 Cliquez sur **Autorisation**
+		   
+		   Veuillez à ajouter l'utilisateur qui doit avoir acces au partage,en lui donnant les autorisations de **Controle total**.
+---
+		photo : autorisation
+---
+
+		2.4 Derniere manipulation sur **Windows** cliquez sur l'onglet **Sécurité**.Ajoutez l'utilisateur également ici et lui octroyer également toutes les autorisations à cet endroit.
+
+---
+		photo sécurité
+---
+
+3. Création du dossier partagé et monter le partage dans le système de fichier dans votre distribution *Linux*
+
+		3.1 Création du point de montage 
+```
+sudo mkdir /mnt/Commun
+```
+
+		3.2 Installation du paquet **cifs-utils** (prise en charge du Samba sous Linux)
+---
+
+```
+sudo apt install cifs-utils -y
+```
+
+---
+
+		3.3 Commande à éxecuter pour le montage de notre dossier Commun
+		
+
+```
+sudo mount -t cifs //win01/Commun /mnt/Commun -o username=wilder
+```
+
+
+Vous devez maintenant saisir votre mot de passe Windows.
+
+---
+
+		3.4 Commande à éxecuter pour lister le contenu de notre dossier Commun
+
+
+```
+ls -l /mnt/Commun
+```
+
+
+---
+
+photo apercu_win01
+
+---
+
+Il faut également  faire un point de montage avec le **Serveur Windows**
+
+Commande à exécuter pour le montage de notre dossier Commun :
+
+```
+sudo mount -t cifs //win01/Commun /mnt/Commun -o username=wilder
+
+```
+
+Vous devez maintenant saisir votre mot de passe Windows.
+
+Commande à exécuter pour lister le contenu de notre dossier Commun :
+
+```
+ls -l /mnt/Commun
+
+```
+
+---
+ photo : apercu_commun_win01
+
+---
+
+
+  
 # 4. FAQ
 <span id="faq"></span>

@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "INSTALL.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -173,9 +173,16 @@
   "lastOpenFiles": [
     "README.md",
     "INSTALL.md",
-    "Ressources/install seclists.png",
+    "Ressources/sécurité.png",
+    "Ressources/apercu_commun_srvwin01.png",
+    "Ressources/apercu-commun_win01.png",
+    "Ressources/autorisation.png",
+    "Ressources/Propriété_de_commun.png",
+    "Ressources/partage_avancé.png",
+    "Ressources/dossier_partager_windows.png",
+    "Ressources/install_seclists_ok.png",
+    "Ressources/install_john_ok.png",
     "USER_GUIDE John the ripper.md",
-    "Ressources/install john the ripper 1.png",
-    "Ressources/logo_WCS.jpg"
+    "Ressources/option_john.png"
   ]
 }
