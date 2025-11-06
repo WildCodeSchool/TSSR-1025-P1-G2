@@ -115,16 +115,15 @@ sudo systemctl enable smdb
 ![image](Ressources/dossier_partager_windows.png)	
 
 
-	-Pour partagé le dossier suivons les étapes suivantes :
+Pour partagé le dossier suivons les étapes suivantes :
 		
-		2.1 Faire un clic droit sur le dossier **Commun**,puis sélectionnez **Propriété**
----
-		photo : propriete_de_commun
+Faire un clic droit sur le dossier **Commun**,puis sélectionnez **Propriété**
 
----
+![image](Ressources/Propriété_de_commun.png)
 
 
-		2.2 Cliquez sur l'onglet **Partage** ,puis **Partage avancé** et enfin cochez la case **Partage ce dossier**.Conservez le nom par defaut.
+
+Cliquez sur l'onglet **Partage** ,puis **Partage avancé** et enfin cochez la case **Partage ce dossier**.Conservez le nom par defaut.
 	
 ---
 			photo : partage_avancé
