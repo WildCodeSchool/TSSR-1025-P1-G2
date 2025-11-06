@@ -196,12 +196,8 @@ ls -l /mnt/Commun
 
 ```
 
----
- photo : apercu_commun_win01
-
----
+![image](Ressources/apercu_commun_srvwin01.png)
 
 
-  
 # 4. FAQ
 <span id="faq"></span>
