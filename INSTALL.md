@@ -49,10 +49,11 @@ Une fois le paquet snap installé reporté vous au paragraphe 2 pour installé l
 
 Ensuite il faut téléchargé une wordlist plus conséquente pour utilisé *john* tapons cette commande :
 
-        sudo snap install seclists
+```
+sudo snap install seclists
+```
 
-
-      photo : install_seclist_ok
+![texte](Ressources/install_seclists_ok.png)
 
 
 Une fois *seclists* installé il faut aller chercher les listes de dictionnaire que nous avons besoins, nous en avons sélectionné deux :
