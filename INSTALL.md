@@ -33,7 +33,8 @@ _________
 - Cette méthode a le mérite d'installer une version récente et embarque davantage de bibliothèque, également plus de format supporté . Les mises à jour sont automatique.
 	 - une fois la commande exécuté vous devriez avoir ce message :
 	
-		 photo: install_john_ok
+	![exemple](Ressources/install_john_ok.png)
+
 
 Si la commande **snap** ne fonctionne pas ,c'est parce que le paquet snap n'est pas installé sur votre distribution *Linux*
 
@@ -50,7 +51,6 @@ Ensuite il faut téléchargé une wordlist plus conséquente pour utilisé *john
 
         sudo snap install seclists
 
----
 
       photo : install_seclist_ok
 
