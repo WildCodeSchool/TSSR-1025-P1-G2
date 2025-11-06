@@ -137,27 +137,26 @@ Veuillez à ajouter l'utilisateur qui doit avoir acces au partage,en lui donnant
 
 Derniere manipulation sur **Windows** cliquez sur l'onglet **Sécurité**.Ajoutez l'utilisateur également ici et lui octroyer également toutes les autorisations à cet endroit.
 
+![photo](Ressources/sécurité.png)
 
-		photo sécurité
+Création du dossier partagé et monter le partage dans le système de fichier dans votre distribution *Linux*
 
+Création du point de montage 
 
-3. Création du dossier partagé et monter le partage dans le système de fichier dans votre distribution *Linux*
-
-		3.1 Création du point de montage 
 ```
 sudo mkdir /mnt/Commun
 ```
 
-		3.2 Installation du paquet **cifs-utils** (prise en charge du Samba sous Linux)
----
+Installation du paquet **cifs-utils** (prise en charge du Samba sous Linux)
+
 
 ```
 sudo apt install cifs-utils -y
 ```
 
----
 
-		3.3 Commande à éxecuter pour le montage de notre dossier Commun
+
+Commande à éxecuter pour le montage de notre dossier Commun
 		
 
 ```
@@ -167,9 +166,9 @@ sudo mount -t cifs //win01/Commun /mnt/Commun -o username=wilder
 
 Vous devez maintenant saisir votre mot de passe Windows.
 
----
 
-		3.4 Commande à éxecuter pour lister le contenu de notre dossier Commun
+
+Commande à éxecuter pour lister le contenu de notre dossier Commun
 
 
 ```
