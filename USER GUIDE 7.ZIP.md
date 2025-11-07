@@ -125,7 +125,7 @@ Entre le mot de passe
 clique sur Ok  
 
 
-![[ouvrir zip.png]]
+![[ouvrir zip.png]](Ressources/ouvrir_zip.png)
 
 
 
