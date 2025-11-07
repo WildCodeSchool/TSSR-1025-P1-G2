@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "ad87226fd773e8da",
+        "id": "52aab5fa95d1e675",
         "type": "tabs",
+        "dimension": 75.12437810945273,
         "children": [
           {
-            "id": "19819217630d37a2",
+            "id": "f700c6b4a2699e8e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "USER GUIDE 7.ZIP.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "USER GUIDE 7.ZIP"
-            }
+              "title": "README"
+            },
+            "group": "3ebf816108fef732"
+          }
+        ]
+      },
+      {
+        "id": "2c7a3bc4ca8bd0b0",
+        "type": "tabs",
+        "dimension": 24.875621890547265,
+        "children": [
+          {
+            "id": "b2c6a5d6d2bafb04",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan de README"
+            },
+            "group": "3ebf816108fef732"
           }
         ]
       }
@@ -53,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#mais",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 215.5
   },
   "right": {
     "id": "b785bc287d18a6c7",
@@ -169,10 +194,132 @@
       "bases:Create new base": false
     }
   },
+  "floating": {
+    "id": "49a0460377ca7d10",
+    "type": "floating",
+    "children": [
+      {
+        "id": "0a3289f1f5551c10",
+        "type": "window",
+        "children": [
+          {
+            "id": "2327fcdcbb024013",
+            "type": "tabs",
+            "dimension": 57.98492117888966,
+            "children": [
+              {
+                "id": "19819217630d37a2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "USER GUIDE 7.ZIP.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "USER GUIDE 7.ZIP"
+                },
+                "group": "62da93579188123f"
+              }
+            ]
+          },
+          {
+            "id": "b06dd98a5097f462",
+            "type": "tabs",
+            "dimension": 28.30705962988348,
+            "children": [
+              {
+                "id": "aab465964273ae81",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "USER GUIDE 7.ZIP.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Plan de USER GUIDE 7.ZIP"
+                },
+                "group": "62da93579188123f"
+              }
+            ]
+          },
+          {
+            "id": "6d0385826c14f8fb",
+            "type": "tabs",
+            "dimension": 13.708019191226867,
+            "children": [
+              {
+                "id": "9d53788aaa0e0741",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "USER GUIDE 7.ZIP.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Plan de USER GUIDE 7.ZIP"
+                },
+                "group": "62da93579188123f"
+              },
+              {
+                "id": "ade0f8f9258aa842",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "Nouvel onglet"
+                }
+              },
+              {
+                "id": "a33f60d9a79fc93a",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "Nouvel onglet"
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "vertical",
+        "x": 1413,
+        "y": 0,
+        "width": 324,
+        "height": 841,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
   "active": "19819217630d37a2",
   "lastOpenFiles": [
-    "README.md",
     "USER GUIDE 7.ZIP.md",
-    "INSTALL.md"
+    "USER GUIDE 7.ZIP 1.md",
+    "README.md",
+    "INSTALL.md",
+    "Ressources/page de telechargement 7zip.png",
+    "Ressources/Pasted image 20251106110556.png",
+    "Ressources/Pasted image 20251106091545.png",
+    "Ressources/USER GUIDE 7.ZIP 1.md",
+    "Ressources/ouvrir zip.png",
+    "Ressources/CNIL.png",
+    "Ressources/creer le zip.png",
+    "Ressources/format archive.png",
+    "Ressources/meta.png",
+    "Ressources/util de base.png",
+    "Ressources/[util de base.png",
+    "7zip_debian.md",
+    "7zip_aes256_debian.md"
   ]
 }
