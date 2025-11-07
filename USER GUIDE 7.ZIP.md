@@ -88,7 +88,7 @@ les options de format TAR / WIM  permettent d’enregistrer aussi les liens symb
 1. Clique droit sur ton dossier
 2. **7-Zip → Ajouter à l’archive…**
 3. Dans la fenêtre : 
-4. ![[creer le zip.png]]
+4. ![[creer le zip.png]](Ressources/creer_le_zip.png)
 5. 
 
 
