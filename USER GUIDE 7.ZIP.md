@@ -11,7 +11,7 @@ Pour une utilisation sans chiffrement , nous allons pouvoir créer une archive d
 Clic droit sur l'objet à compresser choisissant **7-Zip → Ajouter à l’archive…**.
 Dans la fenêtre qui s’ouvre, sélectionne le **format ZIP** si tu veux que ton archive soit compatible partout, ou **7z** si tu préfères une meilleure compression et laisse la case mot de passe vide.
 Laisse le **niveau de compression** sur _Normal_, la **méthode de compression** sur _LZMA_ et le **mode de mise à jour** sur _Ajouter et remplacer les fichiers_.  
-![[util de base.png]]
+(Ressources/util de base.png)
 ##  Extraire une archive
  Clic droit dessus et choisis **Extraire ici** pour tout décompresser dans le dossier actuel, ou **Extraire vers "Nom_du_dossier"** pour créer un dossier dédié.
 Si tu veux mettre à jour une archive existante, relance la commande **Ajouter à l’archive…** depuis le dossier d’origine et garde le mode _Ajouter et remplacer les fichiers_.
@@ -47,8 +47,7 @@ il est donc possible de choisir et de regler le taux de compression ( ratio) .
 - L’option **« Mode de mise à jour »** (quand tu ajoutes des fichiers à une archive existante) contrôle **ce que le programme fait avec les fichiers déjà présents dans l’archive**.  Autrement dit, cela définit **comment 7-Zip met à jour ou remplace les fichiers** d’une archive .7z, .zip, etc.
 
 
-![[meta.png]]
- 
+![[Ressources/meta.png]]
 
 	Voici les différents modes possibles :
 	
