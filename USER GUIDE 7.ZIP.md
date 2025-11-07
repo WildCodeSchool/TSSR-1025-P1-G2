@@ -49,7 +49,7 @@ il est donc possible de choisir et de regler le taux de compression ( ratio) .
 - L’option **« Mode de mise à jour »** (quand tu ajoutes des fichiers à une archive existante) contrôle **ce que le programme fait avec les fichiers déjà présents dans l’archive**.  Autrement dit, cela définit **comment 7-Zip met à jour ou remplace les fichiers** d’une archive .7z, .zip, etc.
 
 
-![[Ressources/meta.png]]
+![Ressources/meta.png](Ressources/meta.png)
 
 	Voici les différents modes possibles :
 	
