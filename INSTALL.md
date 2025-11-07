@@ -16,7 +16,9 @@
 ## ** Installation manuelle **
 <span id="installation-sur-le-serveur"></span>
 Le site officiel : [https://www.7-zip.org](https://www.7-zip.org)
-![[page de telechargement 7zip.png]]
+
+![[page de telechargement 7zip.png]](Ressources/page_de_telechargement_7zip.png)
+
 
 
 1. Télécharge la version correspondant à ton système :
