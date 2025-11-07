@@ -184,7 +184,7 @@ Il faut également  faire un point de montage avec le **Serveur Windows**
 Commande à exécuter pour le montage de notre dossier Commun :
 
 ```
-sudo mount -t cifs //win01/Commun /mnt/Commun -o username=wilder
+sudo mount -t cifs //svrwin01/Commun /mnt/Commun -o username=wilder
 
 ```
 
