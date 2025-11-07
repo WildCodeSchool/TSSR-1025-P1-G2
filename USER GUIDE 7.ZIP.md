@@ -64,7 +64,7 @@ il est donc possible de choisir et de regler le taux de compression ( ratio) .
 
 - L’option **« Format de l'archive»** détermine **le type de fichier compressé à créer** — c’est-à-dire **la structure et les capacités** de l’archive (vitesse, taux de compression, chiffrement, compatibilité, etc.).
 
-![[format archive.png]]
+![[format archive.png]](Ressources/format_archive.png)
 
 Par défaut, 7-Zip ne garde **que la date de modification**, donc la date de dernière modification est préservée **mais** la date de création et celle du dernier accès sont perdues.
 C’est un **problème en archivage technique ou légal**, où la date de création ou d’accès à une valeur est  importante.
