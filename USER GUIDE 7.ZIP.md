@@ -89,10 +89,7 @@ les options de format TAR / WIM  permettent d’enregistrer aussi les liens symb
 2. **7-Zip → Ajouter à l’archive…**
 3. Dans la fenêtre : 
 4. ![[creer le zip.png]](Ressources/creer_le_zip.png)
-5. 
-
-
-Laisse les différentes options sur" défauts" et choisis le format de l'archive et la méthode de chiffrement  :_ ( la plus sure actuellement est l'AES 256)_
+5. Laisse les différentes options sur" défauts" et choisis le format de l'archive et la méthode de chiffrement  :_ ( la plus sure actuellement est l'AES 256)_
 
 **Format de l’archive :** 7zip   
 **Méthode de chiffrement :** `AES-256` ( pas de choix avec 7.zip )
