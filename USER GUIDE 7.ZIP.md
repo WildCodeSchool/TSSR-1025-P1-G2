@@ -108,7 +108,7 @@ Puis il te faut genérer ton mot de passe , l'entrer et le confirmer. ( par exem
 		https://www.cnil.fr/fr/generer-un-mot-de-passe-solide
 
  
- ![[CNIL.png]]
+ ![[CNIL.png]](Ressources/CNIL.png)
  
  Entre le mot de passe que tu viens de ** genérer**
 
