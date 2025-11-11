@@ -65,7 +65,7 @@ cd /mnt/Commun/win01/svrwin01
 cp fichier2.zip /home/wilder
 ```
 
-photo : copiefichier2.zip
+![image](Ressources/copie_fichier2.zip.png)
 
 - Récupérons le *HASH* :
 
