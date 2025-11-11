@@ -82,7 +82,7 @@ john-the-ripper.zip2john fichier2.zip > empreinte2.txt
 john-the-ripper empreinte2.txt
 ```
 
-photo mdp fichier2.zip
+![image](Ressources/mdp_fichier2.zip.png)
 
 
 Et voilà le Mot de Passe de *fichier2.zip* était **demo**
