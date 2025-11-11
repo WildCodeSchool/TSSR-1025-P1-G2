@@ -73,7 +73,8 @@ cp fichier2.zip /home/wilder
 john-the-ripper.zip2john fichier2.zip > empreinte2.txt
 ```
 
-photo . empreintefichier2.zip
+![image](Ressources/empreinte_fichier2.zip.png)
+
 
 - Et maintenant on envoi la commande de l'attaque de *John*
 
