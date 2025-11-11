@@ -11,7 +11,9 @@ Pour une utilisation sans chiffrement , nous allons pouvoir créer une archive d
 Clic droit sur l'objet à compresser choisissant **7-Zip → Ajouter à l’archive…**.
 Dans la fenêtre qui s’ouvre, sélectionne le **format ZIP** si tu veux que ton archive soit compatible partout, ou **7z** si tu préfères une meilleure compression et laisse la case mot de passe vide.
 Laisse le **niveau de compression** sur _Normal_, la **méthode de compression** sur _LZMA_ et le **mode de mise à jour** sur _Ajouter et remplacer les fichiers_.  
-(Ressources/util de base.png)
+
+![imag](Ressources/util_de_base.png)
+
 ##  Extraire une archive
  Clic droit dessus et choisis **Extraire ici** pour tout décompresser dans le dossier actuel, ou **Extraire vers "Nom_du_dossier"** pour créer un dossier dédié.
 Si tu veux mettre à jour une archive existante, relance la commande **Ajouter à l’archive…** depuis le dossier d’origine et garde le mode _Ajouter et remplacer les fichiers_.
@@ -47,7 +49,7 @@ il est donc possible de choisir et de regler le taux de compression ( ratio) .
 - L’option **« Mode de mise à jour »** (quand tu ajoutes des fichiers à une archive existante) contrôle **ce que le programme fait avec les fichiers déjà présents dans l’archive**.  Autrement dit, cela définit **comment 7-Zip met à jour ou remplace les fichiers** d’une archive .7z, .zip, etc.
 
 
-![[Ressources/meta.png]]
+![Ressources/meta.png](Ressources/meta.png)
 
 	Voici les différents modes possibles :
 	
@@ -62,7 +64,7 @@ il est donc possible de choisir et de regler le taux de compression ( ratio) .
 
 - L’option **« Format de l'archive»** détermine **le type de fichier compressé à créer** — c’est-à-dire **la structure et les capacités** de l’archive (vitesse, taux de compression, chiffrement, compatibilité, etc.).
 
-![[format archive.png]]
+![[format archive.png]](Ressources/format_archive.png)
 
 Par défaut, 7-Zip ne garde **que la date de modification**, donc la date de dernière modification est préservée **mais** la date de création et celle du dernier accès sont perdues.
 C’est un **problème en archivage technique ou légal**, où la date de création ou d’accès à une valeur est  importante.
@@ -86,11 +88,16 @@ les options de format TAR / WIM  permettent d’enregistrer aussi les liens symb
 1. Clique droit sur ton dossier
 2. **7-Zip → Ajouter à l’archive…**
 3. Dans la fenêtre : 
+<<<<<<< HEAD
 
 4. ![[format zip jpg.jpg]]
 
 
 Laisse les différentes options sur" défauts" et choisis le format de l'archive et la méthode de chiffrement  :_ ( la plus sure actuellement est l'AES 256)_
+=======
+ ![[creer le zip.png]](Ressources/creer_le_zip.png)
+4. Laisse les différentes options sur" défauts" et choisis le format de l'archive et la méthode de chiffrement  :_ ( la plus sure actuellement est l'AES 256)_
+>>>>>>> a531a401e603a0111dae93466dde0325eb2ef8b4
 
 **Format de l’archive :** zip 
 **Méthode de chiffrement :** `AES-256` 
@@ -106,7 +113,7 @@ Puis il te faut générer ton mot de passe , l'entrer et le confirmer. ( par exe
 		https://www.cnil.fr/fr/generer-un-mot-de-passe-solide
 
  
- ![[CNIL.png]]
+ ![[CNIL.png]](Ressources/CNIL.png)
  
  Entre le mot de passe que tu viens de ** genérer**
 
@@ -123,7 +130,7 @@ Entre le mot de passe
 clique sur Ok  
 
 
-![[ouvrir zip.png]]
+![[ouvrir zip.png]](Ressources/ouvrir_zip.png)
 
 
 
