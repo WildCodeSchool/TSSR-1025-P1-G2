@@ -95,7 +95,7 @@ les options de format TAR / WIM  permettent d’enregistrer aussi les liens symb
 
 Laisse les différentes options sur" défauts" et choisis le format de l'archive et la méthode de chiffrement  :_ ( la plus sure actuellement est l'AES 256)_
 =======
- ![[creer le zip.png]](Ressources/creer_le_zip.png)
+ ![[creer le zip.png]](format zip jpg.jpg)
 4. Laisse les différentes options sur" défauts" et choisis le format de l'archive et la méthode de chiffrement  :_ ( la plus sure actuellement est l'AES 256)_
 >>>>>>> a531a401e603a0111dae93466dde0325eb2ef8b4
 
