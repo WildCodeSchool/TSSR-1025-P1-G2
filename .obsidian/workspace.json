@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8dde6b439e78e945",
+        "id": "bac4f676b2cc9b33",
         "type": "tabs",
         "children": [
           {
-            "id": "7af2ba7d6b14e801",
+            "id": "d026651ea7cc8c41",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "INSTALL.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -169,20 +169,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "7af2ba7d6b14e801",
+  "active": "d026651ea7cc8c41",
   "lastOpenFiles": [
     "README.md",
-    "INSTALL.md",
-    "Ressources/sécurité.png",
-    "Ressources/apercu_commun_srvwin01.png",
-    "Ressources/apercu-commun_win01.png",
-    "Ressources/autorisation.png",
-    "Ressources/Propriété_de_commun.png",
-    "Ressources/partage_avancé.png",
-    "Ressources/dossier_partager_windows.png",
-    "Ressources/install_seclists_ok.png",
-    "Ressources/install_john_ok.png",
     "USER_GUIDE John the ripper.md",
-    "Ressources/option_john.png"
+    "Ressources/mdp_fichier2.zip.png",
+    "Ressources/empreinte_fichier2.zip.png",
+    "Ressources/copie_fichier2.zip.png",
+    "Ressources/mdp_fichier1.zip.png",
+    "Ressources/hash_fichier1.zip.png",
+    "Ressources/copie.fichier1.zip.png",
+    "Ressources/affichage_fichier1.png",
+    "INSTALL.md",
+    "Ressources/cde_ls_svrwin01.png",
+    "Ressources/cde-ls_win01.png",
+    "Ressources/sécurité.png"
   ]
 }

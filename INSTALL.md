@@ -80,14 +80,14 @@ tar -xzf rockyou.txt.tar.gz
 
 
 ---
--**POINT DE MONTAGE REPERTOIRE ENTRE WINDOWS ET LINUX**
+**POINT DE MONTAGE REPERTOIRE ENTRE WINDOWS ET LINUX**
 ---
 
 
 
-Installé **Samba** sur votre distribution **Linux**
+  - Installé **Samba** sur votre distribution **Linux**
    
-   -Installons le paquet *Samba* avec cette ligne de commande :
+   Installons le paquet *Samba* avec cette ligne de commande :
 
 ```
 sudo apt install samba
@@ -98,11 +98,11 @@ sudo apt install samba
 
 
 ```
-sudo systemctl enable smdb
+sudo systemctl enable smbd
 
 ```
 
-Création du dossier partagé sur *Windows*
+ -  Création du dossier partagé sur *Windows*
 
     
 Pour ce projet on va créé un dossier **C:\Commun**
@@ -140,15 +140,16 @@ Derniere manipulation sur **Windows** cliquez sur l'onglet **Sécurité**.Ajoute
 
 ![photo](Ressources/sécurité.png)
 
-Création du dossier partagé et monter le partage dans le système de fichier dans votre distribution *Linux*
+ - Création du dossier partagé et monter le partage dans le système de fichier dans votre distribution *Linux*
 
-Création du point de montage 
+Création des dossiers commun PC UBUNTU et Serveur WINDOWS 
 
 ```
-sudo mkdir /mnt/Commun
+sudo mkdir /mnt/Commun/win01
+sudo mkdir /mnt/Commun/win01/svrwin01
 ```
 
-Installation du paquet **cifs-utils** (prise en charge du Samba sous Linux)
+ - Installation du paquet **cifs-utils** (prise en charge du Samba sous Linux)
 
 
 ```
@@ -157,11 +158,10 @@ sudo apt install cifs-utils -y
 
 
 
-Commande à éxecuter pour le montage de notre dossier Commun
-		
+- Commande à exécuter pour le montage de notre dossier Commun
 
 ```
-sudo mount -t cifs //win01/Commun /mnt/Commun -o username=wilder
+sudo mount -t cifs //win01/Commun /mnt/Commun/win01 -o username=wilder
 ```
 
 
@@ -169,23 +169,22 @@ Vous devez maintenant saisir votre mot de passe Windows.
 
 
 
-Commande à éxecuter pour lister le contenu de notre dossier Commun
+- Commande à exécuter pour lister le contenu de notre dossier Commun
 
 
 ```
-ls -l /mnt/Commun
+ls /mnt/Commun/win01
 ```
 
-![image](Ressources/apercu-commun_win01.png)
+ photo : ls win01
 
 
-Il faut également  faire un point de montage avec le **Serveur Windows**
+- Il faut également  faire un point de montage avec le **Serveur Windows**
 
 Commande à exécuter pour le montage de notre dossier Commun :
 
 ```
-sudo mount -t cifs //svrwin01/Commun /mnt/Commun -o username=wilder
-
+sudo mount -t cifs //svrwin01/Commun /mnt/Commun/win01/svrwin01 -o username=wilder
 ```
 
 Vous devez maintenant saisir votre mot de passe Windows.
@@ -193,12 +192,50 @@ Vous devez maintenant saisir votre mot de passe Windows.
 Commande à exécuter pour lister le contenu de notre dossier Commun :
 
 ```
-ls -l /mnt/Commun
+ls -l /mnt/Commun/win01/svrwin01
 
 ```
 
-![image](Ressources/apercu_commun_srvwin01.png)
+photo : ls svrwin01
 
+## Montage automatique au démarrage (Facultatif)
 
+- Pour évité a chaque démarrage de votre machine de refaire les manipulations pour le montage des dossiers voici les étapes à effectuer :
+
+```
+sudo nano /etc/fstab
+```
+
+- Une fois dans ce fichier nous allons ajouter ces deux lignes :
+
+```
+//win01/Commun /mnt/Commun/win01 cifs credentials=/etc/smb-partage-creds 0 0
+//svrwin01/Commun /mnt/Commun/win01/svrwin01 cifs credentials=/etc/smb-partage
+```
+
+- Ensuite , sauvegardez le fichier (**CTRL+0** puis **ENTER**) et quittez (**CTRL+X**)
+
+- Maintenant, on va créé le fichier **/etc/smb-partage-creds**, il va nous servir à stocker les utilisateurs et mot de passe.
+
+```
+sudo nano /etc/smb-partage-creds
+```
+
+- Dans ce fichier indiquez le nom d'utilisateur et le mot de passe de votre compte Windows comme ceci :
+
+```
+username=wilder
+password=Azerty1*
+```
+
+- Ensuite on enregistre et on ferme le fichier.
+
+- Pour **éviter les accès non autorisés**,modifions les permissions sur ce fichier avec cette commande :
+
+```
+sudo chmod 600 /etc/smb-partage-creds
+```
+
+Effectuer le redémarrage de votre machine.
 # 4. FAQ
 <span id="faq"></span>
