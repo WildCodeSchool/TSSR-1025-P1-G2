@@ -33,7 +33,7 @@ _________
 - Cette méthode a le mérite d'installer une version récente et embarque davantage de bibliothèque, également plus de format supporté . Les mises à jour sont automatique.
 	 - une fois la commande exécuté vous devriez avoir ce message :
 	
-	![exemple](Ressources/install_john_ok.png)
+![exemple](Ressources/install_john_ok.png)
 
 
 Si la commande **snap** ne fonctionne pas ,c'est parce que le paquet snap n'est pas installé sur votre distribution *Linux*
@@ -196,7 +196,8 @@ ls -l /mnt/Commun/win01/svrwin01
 
 ```
 
-photo : ls svrwin01
+![image](Ressources/cde-ls_win01.png)
+
 
 ## Montage automatique au démarrage (Facultatif)
 
