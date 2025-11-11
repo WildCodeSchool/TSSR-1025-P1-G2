@@ -41,7 +41,7 @@ john-the-ripper.zip2john fichier1.zip > empreinte1.txt
 - Ensuite comme vous pouvez le voir sur cette *screenshot* nous avons un fichier **empreinte1.txt** de créé avec le *hash*
 
 
-Photo : hash_fichier1
+![image](Ressources/hash_fichier1.zip.png)
 
 - Grâce à ce fichier nous allons pouvoir lancer *John* pour nous casser le mot de passe par force brut avec cette commande :
 
