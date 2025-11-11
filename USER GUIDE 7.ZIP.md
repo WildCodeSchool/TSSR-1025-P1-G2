@@ -90,7 +90,7 @@ les options de format TAR / WIM  permettent d’enregistrer aussi les liens symb
 3. Dans la fenêtre : 
 <<<<<<< HEAD
 
-4. ![[format zip jpg.jpg]](Ressources/format zip jpg.jpg)
+4. ![[format zip jpg.jpg]](Ressources/formatzip.jpg)
 
 
 Laisse les différentes options sur" défauts" et choisis le format de l'archive et la méthode de chiffrement  :_ ( la plus sure actuellement est l'AES 256)_
