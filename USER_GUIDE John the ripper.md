@@ -51,7 +51,7 @@ john-the-ripper empreinte1.txt
 
 Et voici le résultat tant attendu :
 
-photo : mdp_fichier1zip
+![image](Ressources/mdp_fichier1.zip.png)
 
 Opération réussi comme vous pouvez voir le mot de passe était : **Essai**
 
