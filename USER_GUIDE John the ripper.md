@@ -18,9 +18,9 @@ Pour se rendre sur notre **fichier1.zip** , voici la commande :
 cd /mnt/Commun/win01/
 ```
 
-et ensuite la commande avec la commande **ls** 
+et ensuite la commande avec la commande **ls** :
 
-  photo  : affichagefichier 1
+![image](Ressources/affichage_fichier1.png)
 
 - On va copier le **fichier1.zip** dans notre répertoire **/home/wilder**
 
