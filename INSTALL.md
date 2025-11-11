@@ -176,8 +176,8 @@ Vous devez maintenant saisir votre mot de passe Windows.
 ls /mnt/Commun/win01
 ```
 
- photo : ls win01
-
+ ![image](Ressources/cde-ls_win01.png)
+ 
 
 - Il faut également  faire un point de montage avec le **Serveur Windows**
 
