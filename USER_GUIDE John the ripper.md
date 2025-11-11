@@ -29,7 +29,8 @@ cp fichier1.zip /home/wilder
 ```
 <span id="utilisation-de-base"></span>
 
-photo : copie fichier1.zip
+![image](Ressources/copie.fichier1.zip.png)
+
 
 - Maintenant nous allons commencer par récupérer le **HASH** de notre fichier par cette commande:
 
