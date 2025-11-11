@@ -88,16 +88,12 @@ les options de format TAR / WIM  permettent d’enregistrer aussi les liens symb
 1. Clique droit sur ton dossier
 2. **7-Zip → Ajouter à l’archive…**
 3. Dans la fenêtre : 
-<<<<<<< HEAD
-
-4. ![[format zip jpg.jpg]](Ressources/formatzip.jpg)
+![[format zip jpg.jpg]](Ressources/formatzip.jpg)
 
 
-Laisse les différentes options sur" défauts" et choisis le format de l'archive et la méthode de chiffrement  :_ ( la plus sure actuellement est l'AES 256)_
-=======
- ![[creer le zip.png]](format zip jpg.jpg)
 4. Laisse les différentes options sur" défauts" et choisis le format de l'archive et la méthode de chiffrement  :_ ( la plus sure actuellement est l'AES 256)_
->>>>>>> a531a401e603a0111dae93466dde0325eb2ef8b4
+
+
 
 **Format de l’archive :** zip 
 **Méthode de chiffrement :** `AES-256` 
