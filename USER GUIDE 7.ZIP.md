@@ -86,20 +86,20 @@ les options de format TAR / WIM  permettent d’enregistrer aussi les liens symb
 1. Clique droit sur ton dossier
 2. **7-Zip → Ajouter à l’archive…**
 3. Dans la fenêtre : 
-4. ![[creer le zip.png]]
-5. 
+
+4. ![[format zip jpg.jpg]]
 
 
 Laisse les différentes options sur" défauts" et choisis le format de l'archive et la méthode de chiffrement  :_ ( la plus sure actuellement est l'AES 256)_
 
-**Format de l’archive :** 7zip   
-**Méthode de chiffrement :** `AES-256` ( pas de choix avec 7.zip )
+**Format de l’archive :** zip 
+**Méthode de chiffrement :** `AES-256` 
 Pour le format zip proposé dans le menu , tu peux choisir ZipCrypto ou AES 256 ( mais ZipCrypto est moins secure ) par contre ZipCrypto crée une archive compatible avec la plupart des applications d'archivage.
 
  _il est possible aussi de chiffrer les noms de fichiers dans l'archive._
-_Si vous devez partager ce fichier avec un collaborateur, vous devrez lui faire parvenir le mot de passe par un moyen securisé_ 
+_Si vous devez partager ce fichier avec un collaborateur, vous devrez lui faire parvenir le mot de passe par un moyen sécurisé._ 
 
-Puis il te faut genérer ton mot de passe , l'entrer et le confirmer. ( par exemple sur le site de la CNIL )
+Puis il te faut générer ton mot de passe , l'entrer et le confirmer. ( par exemple sur le site de la CNIL )
 
 		# Genère un mot de passe solide sur le site de la CNIL : 
 
