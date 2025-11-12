@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "INSTALL.md",
+                "file": "USER_GUIDE John the ripper.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "INSTALL"
+              "title": "USER_GUIDE John the ripper"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "d026651ea7cc8c41",
   "lastOpenFiles": [
+    "INSTALL.md",
     "README.md",
     "USER_GUIDE John the ripper.md",
     "Ressources/mdp_fichier2.zip.png",
@@ -180,7 +181,6 @@
     "Ressources/hash_fichier1.zip.png",
     "Ressources/copie.fichier1.zip.png",
     "Ressources/affichage_fichier1.png",
-    "INSTALL.md",
     "Ressources/cde_ls_svrwin01.png",
     "Ressources/cde-ls_win01.png",
     "Ressources/sécurité.png"
