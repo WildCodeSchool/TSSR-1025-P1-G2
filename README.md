@@ -1,4 +1,4 @@
-![logo de la Wild Code SChool en exemple](Ressources/logo_WCS.jpg)
+![[read me premiere page.jpg]]
 
 ## Sommaire 
 
@@ -12,28 +12,44 @@
 
 # 🎯 Présentation du projet
 <span id="presentation-du-projet"></span>
-**Sujet choisi**
-## Audit de robustesse de mots de passe
+**Sujet choisi** 
+# Audit de robustesse de mots de passe
 
-						**Présentation**
+## **Présentation**
 
+**Tâche principale** : Audit de robustesse de mots de passe
+Les attaques se font depuis les systèmes Linux vers les systèmes Windows 
+Les attaques ciblent des fichiers protégés par mot de passe
+Tâche secondaire : Audit de robustesse sur le mot de passe d'un utilisateur local
+
+### Détail de la tâche principale :
+Le logiciel John the Ripper est installé sur un client Linux
+Utilisation d’attaque par force brut et par dictionnaire
+Le logiciel Hashcat est installé sur un serveur Linux
+Utilisation de masques d’attaque
+Les fichiers cibles (accessible de base) sont :
+“fichier1.zip” mis sur un client Windows
+“fichier2.zip” mis sur un serveur Windows
+
+### Détail de la tâche secondaire :
+Effectuer des attaques sur le mot de passe d’un compte local du serveur
 
  
-
-
-
 🎯 Objectifs
 
 ## ligne de Défense
-Les mots de passe constituent souvent la première ligne de défense contre les attaques de données informatiques à l'intérieur d'un réseau local.
+Les mots de passe constituent une ligne de défense contre les attaques de données informatiques à l'intérieur d'un réseau local. Ce n'est pas la seule , VPN, Pare feu etc protégent nos réseaux  mais du point de vue fichier utilisateur c'est la première ligne.  
 ## l'Audit : évaluation
-Le rôle de cet audit va donc être d'évaluer la robustesse des mots de passe utilisés sur le parc informatique .
+Le rôle de cet audit va donc être d'évaluer la robustesse des mots de passe utilisés sur les fichiers utilisateurs du parc informatique .
+Pour cela nous sommes équipé de deux machines virtuelles pouvant générer des listes de mots de passe grâçe à deux logiciels : **John the ripper et Haschcat**.
 ## l'Audit : recommandations
-Cette approche permet d'éxaminer les mots de passe éxistants et de proposer des recommandations pour renforcer la sécurité des données.
+Si les mots de passes utilisés ne sont pas assez solides , nos deux méthodes d'attaques vont les récupérer rapidement.
+Cette approche permet d'examiner les mots de passe existants et de proposer des recommandations pour renforcer la sécurité des données.
+
 
 
 ## Organisation du travail au sein du groupe
-Franck Fredérick et moi avons choisi de nous organiser individuellement et de nous retrouver le soir pour partager nos avancées.
+
 
 
 ⚙️ Méthodologie
@@ -57,34 +73,37 @@ Tests d’attaque simulés : dictionnaires, hybrides brute-force.
 | :--------------: | :--------: | --------------------------------------------------------------------------- |
 | Frederick flavil |     SM     | Création du tableau Trello/mise en place du logiciel John the Ripper/       |
 |  Renaud Michel   | Technicien | rédaction du fichier Readme/ recherche sur le chiffrement des mots de passe |
-## PO-SM-TEC
+### PO-SM-TEC
 
 Franck notre PO ( product owner) a bien cerné le projet et les incertitudes du débuts ont été levées après plusieurs discussions avec Dominique notamment sur le rôle un peu flou de chaque machine au début.
 
 Frederick notre SM( srum master ) en organiseur force tranquille  nous a bien installé et guidé dans nos rôle à chacun .
 
 
-Mon rôle a été de faire des recherches sur le chiffrement des mots de passe. 
-En partant de logiciel de compression et de protection , j'ai fais des recherches sur les maniéres de gérer les mots de passe de leurs création à leurs sauvegarde .
+le  rôle de Renaud notre tec a été de faire des recherches sur le chiffrement des mots de passe. 
+En partant de logiciel de compression et de protection , il a fait des recherches sur les manières de gérer les mots de passe de leurs créations à leurs sauvegardes .
 
 
-Franck et Fréderick se sont penchés sur la mise en place d'outils permétants l'annalyse de la protection des données .
+Franck et Fréderick se sont penchés sur la mise en place d'outils permettants l'analyse de la protection des données .
 
 
 
-**Sprint 2**
+## **Sprint 2**
 
-| Membre   | Rôle       | Missions |
-| -------- | ---------- | -------- |
-| membre 1 | Technicien | -        |
-| membre 2 | Technicien | -        |
-| membre 3 | PO         | -        |
-
+| Membre           | Rôle       | Missions                                                       |
+| ---------------- | ---------- | -------------------------------------------------------------- |
+| Franck Paisant   | Technicien | Finalisation de la doc et du user guide de John  the Ripper    |
+| Frederick flavil | SM         | Mise en place et protocole d'attaque avec Hashcat              |
+| Renaud Michel    | PO         | test solution logicielle mise en place par Franck et Frederick |
+ Cette deuxième semaine de projet va nous permettre de finaliser l'attaque avec le logiciel john the Ripper, nous avons tous mis en place le dispositif établi par Franck et nous avons réussi le cassage du hash pour des mots de passe simple .
+ Avec l'utilisation du logiciel 7 zip nous avons convenu de protéger les deux fichiers en type ;zip et chiffrage en AES 256.
+ John the ripper , lorsqu'il visualise le fichier .zip reconnait les caracteristiques de ces protections et nous propose de les utiliser en option . Son utilisation est plutôt simple une fois le fichier récuperé et le hash sorti .
 
 # ⚙️ Choix techniques
 <span id="choix-techniques"></span>
-**Matériel**
-Pour effectuer ce projet, nous avons 4 machines virtuelles connectées entre elle sur un réseau locale 172.16.10.0/24
+## **Matériel**
+
+Pour effectuer ce projet, nous avons 4 machines virtuelles connectées entre elle sur un réseau local 172.16.10.0/24
 
 Une machine sous Windows serveur "SRVWIN01"  ip local:172.16.10.5 
 Une machine sous Linux Debian "SRVLX01" ip local 172.16.10.6 
@@ -96,6 +115,9 @@ Pour compresser les fichiers : 7.zip
 Génération de code sur le site de la CNIL
 Le logiciel John the Ripper est installé sur un client Linux 
 Le logiciel Hashcat est installé sur un serveur Linux Debian
+le logiciel Semba pour permettre à UBU01 de récupérer le file1.zip sur WIN 01
+
+
 # 🧗 Difficultés rencontrées
 <span id="difficultes-rencontrees"></span>
 
@@ -104,3 +126,5 @@ Le logiciel Hashcat est installé sur un serveur Linux Debian
 
 # 🚀 Améliorations possibles
 <span id="ameliorations-possibles"></span>
+
+[^1]: 
