@@ -105,4 +105,3 @@ john-the-ripper -wordlist=/home/wilder/Documents/rockyou.txt empreinte1.txt
 
 # 3. FAQ
 <span id="faq"></span>
-hjorjervhmmljzfmjùjfùzehrfrzbnl
