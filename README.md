@@ -43,8 +43,10 @@ Les mots de passe constituent une ligne de défense contre les attaques de donn�
 Le rôle de cet audit va donc être d'évaluer la robustesse des mots de passe utilisés sur les fichiers utilisateurs du parc informatique .
 Pour cela nous sommes équipé de deux machines virtuelles pouvant générer des listes de mots de passe grâçe à deux logiciels : **John the ripper et Haschcat**.
 ## l'Audit : recommandations
+La vérification des mots de passe révèle que de nombreux collaborateurs privilégient la simplicité à la sécurité, créant des points d’entrée pour les cyberattaques.
 Si les mots de passes utilisés ne sont pas assez solides , nos deux méthodes d'attaques vont les récupérer rapidement.
 Cette approche permet d'examiner les mots de passe existants et de proposer des recommandations pour renforcer la sécurité des données.
+
 
 
 
@@ -114,16 +116,22 @@ Une machine sous Ubuntu" UBU01" ip local 172.16.10.20
 Pour compresser les fichiers : 7.zip
 Génération de code sur le site de la CNIL
 Le logiciel John the Ripper est installé sur un client Linux 
+**Logiciel** _John the ripper_ : est un outil open source conçu pour casser des mots de passe, c’est-à-dire retrouver le mot de passe original à partir de son empreinte (ou _hash_). Il fonctionne en testant rapidement des milliers, voire des millions de combinaisons, grâce à différentes techniques comme les attaques par dictionnaire ou force brute
+
+.photo : icone_John_The_Ripper
+
 Le logiciel Hashcat est installé sur un serveur Linux Debian
 le logiciel Semba pour permettre à UBU01 de récupérer le file1.zip sur WIN 01
 
 
+
 # 🧗 Difficultés rencontrées
 <span id="difficultes-rencontrees"></span>
-
+_John the ripper_ ,pour une attaque par dictionnaire la liste original de _John_ est trop limité Avoir des listes de mots de dictionnaire plus conséquentes Communication entre le PC client Linux et le PC client et serveur Windows
 # 💡 Solutions trouvées
-<span id="solutions-trouvees"></span>
+<s[[]]pan id="solutions-trouvees"></span>
 
+_Pour john the ripper_ = téléchargement d'une wordlist plus conséquentes pour que l'attaque soit plus efficace Installation du paquet seclists Installation de Samba et de cifs sur pc client Linux
 # 🚀 Améliorations possibles
 <span id="ameliorations-possibles"></span>
 
