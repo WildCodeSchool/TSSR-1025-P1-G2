@@ -131,3 +131,6 @@ john the ripper --help
 **À quoi sert l'audit de mots de passe ?** Il permet d'identifier les mots de passe faibles, de sensibiliser les utilisateurs, de vérifier la conformité avec les politiques de sécurité, et d'améliorer la posture de sécurité globale.
 
 **Quelles sont les bonnes pratiques ?** Testez uniquement sur vos propres systèmes ou avec autorisation écrite, utilisez des environnements isolés, documentez vos tests, et proposez des recommandations constructives pour améliorer la sécurité.
+
+
+mise a jour 
