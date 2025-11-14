@@ -57,7 +57,7 @@ Opération réussi comme vous pouvez voir le mot de passe était : **Essai**
 
 ### Fichier2.zip
 
-- Place au deuxième fichier cela va ressemblé au fichier 1 sauf que le chemin est différent :
+- Place au deuxième fichier cela va ressemblér au fichier 1 sauf que le chemin est différent :
 - On se rend au bonne endroit et on copie le fichier sur le **/home/wilder**
 
 ```
