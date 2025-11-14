@@ -134,3 +134,4 @@ john the ripper --help
 
 
 mise a jour 
+mise a jour 2
