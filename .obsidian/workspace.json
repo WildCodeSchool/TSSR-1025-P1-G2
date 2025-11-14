@@ -6,6 +6,7 @@
       {
         "id": "2c7a3bc4ca8bd0b0",
         "type": "tabs",
+        "dimension": 79.77867203219316,
         "children": [
           {
             "id": "af05c7a142186439",
@@ -13,13 +14,37 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
+                "file": "INSTALL.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
-            }
+              "title": "INSTALL"
+            },
+            "group": "b9ee62e0683712f5"
+          }
+        ]
+      },
+      {
+        "id": "7f8f3dfdbf3cf4a1",
+        "type": "tabs",
+        "dimension": 20.22132796780684,
+        "children": [
+          {
+            "id": "05e0e1b1f87e18a5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "INSTALL.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan de INSTALL"
+            },
+            "group": "b9ee62e0683712f5"
           }
         ]
       }
@@ -53,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "perméttants",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,12 +99,11 @@
               "title": "Signets"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 215.5
+    "width": 508.5
   },
   "right": {
     "id": "b785bc287d18a6c7",
@@ -172,23 +196,24 @@
   },
   "active": "af05c7a142186439",
   "lastOpenFiles": [
-    "USER GUIDE 7.ZIP.md",
-    "[Ressources/read.md",
     "README.md",
-    "[Ressources",
-    "Ressources/![[![[Paste[^1]d.md",
-    "Ressources/read me premiere page.jpg",
-    "Pasted image 20251112173700.png",
-    "Ressources/![[Pasted.md",
-    "Ressources/Pasted image 20251112173633.png",
-    "Ressources/formatzip.jpg",
-    "Ressources/format zip jpg.jpg",
+    "USER GUIDE 7.ZIP.md",
+    "Ressources/wim.jpg",
     "INSTALL.md",
-    "Ressources/util_de_base.png",
-    "Ressources/page_de_telechargement_7zip.png",
-    "Ressources/ouvrir_zip.png",
+    "Ressources/differents_format_archives.jpg",
     "Ressources/format_archive.png",
-    "Ressources/creer_le_zip.png",
+    "Ressources/formatzip.jpg",
+    "USER_GUIDE John the ripper.md",
+    "Ressources/hash_fichier1.zip.png",
+    "Ressources/extraction_archive_ubuntu.jpg",
+    "Ressources/install_seclists_ok.png",
+    "Ressources/creation_archive_ubuntu.jpg",
+    "Ressources/logo_WCS.jpg",
+    "Ressources/extraire_le _zip.jpg",
+    "Ressources/![[Pasted.md",
+    "Ressources/![[![[Paste[^1]d.md",
+    "[Ressources/read.md",
+    "[Ressources",
     "USER GUIDE 7.ZIP 1.md",
     "Ressources/USER GUIDE 7.ZIP 1.md",
     "7zip_debian.md",
