@@ -31,7 +31,7 @@ Utilise un outil comme :
 ```bash
 hashid <fichier_hash>        # (sudo apt install hashid)
 ```
-### Exemples :
+### Exemples
 
 | Type de hash   | Mode Hashcat |
 | -------------- | ------------ |
@@ -54,7 +54,7 @@ hashid <fichier_hash>        # (sudo apt install hashid)
 ```bash
 hashcat -m <mode_hash> -a <mode_attaque> -o <resultat.txt> <fichier_hash> <wordlist>
 ```
-#### Exemple (MD5 + dictionnaire) :
+#### Exemple (MD5 + dictionnaire)
 
 ```bash
 hashcat -m 0 -a 0 -o found.txt hashes.txt /usr/share/wordlists/rockyou.txt
@@ -152,7 +152,7 @@ hashcat -m 0 -a 3 -1 ?l?d hashes.txt ?1?1?1?1
 
 ---
 ## Contrôle des performances
-### Benchmark :
+### Benchmark
 
 ```bash
 hashcat -b
@@ -166,7 +166,7 @@ hashcat -w 3   # par défaut
 hashcat -w 4   # intensif
 ```
 
-### Vérifier les périphériques OpenCL :
+### Vérifier les périphériques OpenCL
 
 ```bash
 hashcat -I
