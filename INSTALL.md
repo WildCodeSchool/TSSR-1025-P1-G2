@@ -1,14 +1,17 @@
 ## Sommaire
 
-1. Prérequis technique
-2. Installation sur le serveur Debian
-3. Installation sur le client Ubuntu
-4. Installation sur les machines cibles (Client et Serveur Windows)
-5. FAQ
+1. [Prérequis technique](#1-prérequis-techniques)
+2. [Installation sur le serveur Debian](#2-installation-sur-le-serveur-debian1310)
+3. [Installation sur le client Ubuntu](#3-installation-sur-le-client-ubuntu2404-LTS)
+4. [Installation sur les machines cibles (Client et Serveur Windows)](#4-installation-sur-les-machines-cilbes-Window11Professionnel-&-Windows-Server2019)
+5. [FAQ](#5-FAQ)
 
 ## 1. Prérequis techniques
+<span id="presentation-du-projet"></span>
 ## 2. Installation sur le serveur (Debian 13.1.0)
+<span id="installation-sur-le-serveur-debian1310"></span>
 ### 2.1 Préparation de l'environnement
+<span id="presentation-du-projet"></span>
 
 Mettre à jour le système :
 ```bash
@@ -22,6 +25,7 @@ cd /opt/audit
 ```
 
 ---
+
 ### 2.2 Installation rapide
 
 Pour une installation en une seule ligne de commande, sinon effectuer l'installation détaillée :
@@ -125,7 +129,7 @@ sudo chmod +x /usr/local/bin/zip2hashcat
 ```
 ---
 ## 3. Installation sur le client (Ubuntu 24.04 LTS)
-
+<span id="installation-sur-le-client-ubuntu2404-LTS"></span>
 ### 3.1 John the Ripper
 
  1. Pour l'installation de **John the Ripper**, saisir la commande suivante :
@@ -263,9 +267,53 @@ ls /mnt/Commun/win01
 ---
 ### 3.3 Le logiciel 7-Zip
 
+##### 3.3.1 p7zip-full
+```bash
+sudo apt install -y p7zip-full
+``` 
+
+Commandes utiles :
+```bash
+7z l fichier.7z                   # liste le contenu
+7z x fichier.7z                   # extrait les fichiers
+7z l -slt fichier.7z              # détaille le chiffrement (AES, CRC, etc.)
+7z e <archive>                    # Décompresse une archive
+```
+---
+*un exemple de création en CLI*
+![[creation_archive_ubuntu.jpg]]
+
+---
+*un exemple d' extraction en CLI*
+![[extraction_archive_ubuntu.jpg]]
+
+---
+##### 3.3.2 unzip
+```bash
+sudo apt install -y unzip
+```
+
+Commandes utiles
+```bash
+unzip -l fichier.zip       # liste le contenu
+unzip fichier.zip          # extrait le contenu
+```
+---
+##### 3.3.3 zipinfo
+```bash
+sudo apt install -y zipinfo
+```
+
+Commandes utiles :
+```bash
+zipinfo archive.zip          # affiche le contenu de l'archive
+zipinfo -v archive.zip       # affiche le contenu détaillé de l'archive
+```
+---
 ## 4. Installation sur les machines cibles (Windows 11 Professionnel & Windows Server 2019)
+<span id="installation-sur-les-machines-cilbes-Window11Professionnel-&-Windows-Server2019"></span>
 ### 4.1 OpenSSH
-#### 4.4.1 — Installation d'OpenSSH Server
+#### 4.1.1 — Installation d'OpenSSH Server
 
 ##### Via l'interface graphique  pour Windows 11
 
@@ -312,7 +360,7 @@ Stopped  sshd               OpenSSH SSH Server
 ```
 
 ---
-#### 4.4.2 — Configuration du service SSH
+#### 4.1.2 — Configuration du service SSH
 ##### Démarrer et activer le service
 
 ```powershell
@@ -336,7 +384,6 @@ Running  sshd               OpenSSH SSH Server
 
 ---
 ##### Configurer ssh-agent (optionnel mais recommandé)
-
 ```powershell
 # Démarrer ssh-agent
 Start-Service ssh-agent
@@ -346,9 +393,8 @@ Set-Service -Name ssh-agent -StartupType 'Automatic'
 ```
 
 ---
-#### 4.4.3 — Configuration du pare-feu Windows
+#### 4.1.3 — Configuration du pare-feu Windows
 ##### Via PowerShell (recommandé)
-
 ```powershell
 # Créer une règle de pare-feu pour SSH (port 22)
 New-NetFirewallRule -Name 'OpenSSH-Server-In-TCP' `
@@ -387,7 +433,6 @@ Get-NetFirewallRule -Name 'OpenSSH-Server-In-TCP' | Select-Object Name, Enabled,
 ##### Test distant depuis Linux (Ubuntu/Debian)
 
 **Sur la machine Linux :**
-
 ```bash
 # Récupérer l'IP de la machine Windows
 # (à exécuter sur Windows) : ipconfig
@@ -414,7 +459,6 @@ Tapez `yes` et entrez le mot de passe Windows.
 ##### Test de transfert de fichier (SCP)
 
 **Depuis Linux vers Windows :**
-
 ```bash
 # Envoyer un fichier vers Windows
 scp /chemin/fichier.zip utilisateur@192.168.1.50:C:/Temp/
@@ -424,7 +468,6 @@ scp -r /chemin/dossier/ utilisateur@192.168.1.50:C:/Temp/
 ```
 
 **Depuis Windows vers Linux :**
-
 ```powershell
 # Envoyer un fichier vers Linux
 scp C:\Temp\fichier.zip user@192.168.1.100:/home/user/
@@ -434,7 +477,7 @@ scp user@192.168.1.100:/home/user/rapport.txt C:\Temp\
 ```
 
 ---
-#### 4.4.4 — Configuration de l'authentification par clé SSH (recommandé)
+#### 4.1.4 — Configuration de l'authentification par clé SSH (recommandé)
 ##### Générer une paire de clés sur Linux
 
 ```bash
@@ -461,7 +504,7 @@ ssh utilisateur@192.168.1.50
 Vous devriez vous connecter sans demande de mot de passe (ou avec la passphrase de votre clé si configurée).
 
 ---
-#### 4.4.5 — Vérifications et dépannage
+#### 4.1.5 — Vérifications et dépannage
 ##### Vérifier que le service écoute sur le port 22
 
 ```powershell
@@ -478,6 +521,8 @@ TCP    [::]:22                [::]:0                 LISTENING
 ---
 ### 4.2. Le logiciel 7-Zip
 
+#### 4.2.1 Installation manuelle
+
 Le site officiel : [https://www.7-zip.org](https://www.7-zip.org)
 ![[page de telechargement 7zip.png]](Ressources/page_de_telechargement_7zip.png)
 
@@ -488,7 +533,7 @@ Le site officiel : [https://www.7-zip.org](https://www.7-zip.org)
  *7-Zip s’ajoute automatiquement au menu clic droit de l’Explorateur.*
  
 ---
-#### Installation via PowerShell
+#### 4.2.2 Installation via PowerShell
 
 Si **Winget** est disponible (Windows Server 2022, 2025, ou si tu l’as ajouté manuellement) :
 
@@ -498,7 +543,7 @@ winget install 7zip.7zip
  *7-Zip s’ajoute automatiquement au menu clic droit de l’Explorateur.*
  
 ---
-#### Installation sur Ubuntu
+#### 4.2.3 Installation sur Ubuntu
 
 ````
 sudo apt-get install p7zip
@@ -507,7 +552,7 @@ sudo apt-get install p7zip
 ### 4.3. Le point de montage
 
 ## 5. FAQ
-
+<span id="FAQ"></span>
 ### 5.1 Hashcat
 
 **Q : Quelle est la différence entre John et Hashcat ?**
@@ -593,6 +638,41 @@ sudo chmod 600 /etc/smb-partage-creds
 ---
 ### 5.3 Le logiciel 7-Zip
 
-**Q : Une question**
+###### Q : À quoi sert le chiffrement d’un fichier ZIP ?
 
-p7zip-full fournit 7za et 7z qui gèrent non seulement les archives 7z mais aussi les archives ZIP, Zip64, CAB, ARJ, GZIP, BZIP2, TAR, CPIO, RPM, ISO, DEB et RAR (si le paquet non-libre p7zip-rar est installé). Ce paquet est également nécessaire pour une bonne gestion des mots de passes (création et extraction)
+Le chiffrement d’un fichier ZIP consiste à le protéger par un mot de passe. Le contenu est brouillé à l’aide d’algorithmes cryptographiques et n’est accessible qu’en entrant le mot de passe correct. Cela empêche tout accès non autorisé, même si quelqu’un intercepte le fichier.
+
+###### Q: Lequel est le meilleur, Zipcrypto ou AES-256  ? 
+
+**Il est prouvé que le protocole AES-256 est beaucoup plus sûr que ZipCrypto** , mais si vous choisissez AES-256, le destinataire du fichier zip devra peut-être installer 7-zip ou un autre programme de compression pour lire le contenu du fichier.
+
+###### Q: 7-Zip AES-256 est-il sûr  ? 
+
+**Le format de fichier 7-Zip est sûr** . Le chiffrement AES-256 est sûr pour au moins les prochaines décennies, à condition d'utiliser un mot de passe robuste. Pensez à chiffrer les noms de fichiers si vous le souhaitez et à supprimer les fichiers de manière sécurisée après avoir vérifié l'archive. Si vous souhaitez un plus large choix d'algorithmes de chiffrement, essayez PicoCrypt. (12 mai 2023)
+
+###### Q : Le chiffrement AES-256 est-il piratable  ?
+
+**L'AES 256 est inviolable par force brute.**  Cela rend le chiffrement AES 256 et les données qui le protègent ensuite inviolables pour l'avenir imprévu. (22 juin 2022)
+
+###### Q : Quelqu'un a-t-il déjà réussi à casser le chiffrement AES  ?
+
+La différence entre le décryptage des algorithmes AES-128 et AES-256 est considérée comme minime. Toute avancée permettant de décrypter l'algorithme 128 bits permettra probablement aussi de décrypter l'algorithme 256 bits. En définitive, contrairement à certaines idées reçues, **l'AES n'a jamais été décrypté** et reste inviolable face aux attaques par force brute.
+
+###### Q  : Quelles sont les risques et limites du chiffrement ZIP
+
+- **Mots de passe faibles**: Évitez les mots de passe courts ou communs.
+- **Fuites de métadonnées**: Certains outils ZIP peuvent révéler des noms de fichiers.
+- **Compatibilité**: Tous les outils ne peuvent pas ouvrir les fichiers ZIP AES-256.
+- **Pas de récupération**: Des mots de passe perdus signifient des fichiers perdus.
+
+Pour éviter autant que possible ces risques, considérez les meilleures pratiques suivantes :
+
+- Utilisez des [mots de passe forts et uniques](https://blog.mailfence.com/fr/mot-de-passe-ou-phrase-de-passe/) (12 caractères et plus).
+- [Partagez les mots de passe](https://blog.mailfence.com/fr/partage-de-mot-de-passe-securise/) sur des canaux distincts (par exemple, courrier électronique + SMS).
+- Vérifiez que le destinataire dispose d’outils compatibles (par exemple, 7-Zip ou WinRAR).
+- Utilisez un hachage de fichier (SHA-256) pour confirmer l’intégrité du fichier après.
+  
+  
+Pour en savoir plus sur le cryptage AES :
+
+https://www.winzip.com/en/support/aes-encryption/
