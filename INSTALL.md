@@ -1,10 +1,10 @@
 ## Sommaire
 
 1. [Prérequis technique](#1-prérequis-techniques)
-2. [Installation sur le serveur Debian](#2-installation-sur-le-serveur-debian1310)
-3. [Installation sur le client Ubuntu](#3-installation-sur-le-client-ubuntu2404-LTS)
-4. [Installation sur les machines cibles (Client et Serveur Windows)](#4-installation-sur-les-machines-cilbes-Window11Professionnel-&-Windows-Server2019)
-5. [FAQ](#5-FAQ)
+2. [Installation sur le serveur Linux (Debian 13.1.0)](#2-installation-sur-le-serveur-debian-1310)
+3. [Installation sur le client Linux (Ubuntu 24.04 LTS)](#3-installation-sur-le-client-ubuntu-2404-lts)
+4. [Installation sur les machines cibles (Windows 11 Professionnel & Windows Server 2019)](#4-installation-sur-les-machines-cibles-windows-11-professionnel--windows-server-2019)
+5. [FAQ](#5-faq)
 
 ## 1. Prérequis techniques
 <span id="presentation-du-projet"></span>
@@ -129,7 +129,7 @@ sudo chmod +x /usr/local/bin/zip2hashcat
 ```
 ---
 ## 3. Installation sur le client (Ubuntu 24.04 LTS)
-<span id="installation-sur-le-client-ubuntu2404-LTS"></span>
+<span id="installation-sur-le-client-ubuntu2404-lts"></span>
 ### 3.1 John the Ripper
 
  1. Pour l'installation de **John the Ripper**, saisir la commande suivante :
