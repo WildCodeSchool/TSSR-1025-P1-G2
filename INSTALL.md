@@ -212,8 +212,7 @@ Veuillez à ajouter l'utilisateur qui doit avoir accès au partage, en lui donna
 
 ---
 Dernière manipulation sur **Windows** cliquez sur l'onglet **Sécurité**.Ajoutez l'utilisateur également ici et lui octroyer également toutes les autorisations à cet endroit.
-
-photo securité
+![photo](Ressources/sécurité.png)
 
 ##### 3.2.3 Création du dossier partagé sur Windows Server 2019
 
@@ -306,7 +305,7 @@ Get-Service sshd
 
 **Résultat attendu :**
 
-```bash
+```
 Status   Name               DisplayName
 ------   ----               -----------
 Stopped  sshd               OpenSSH SSH Server
@@ -329,7 +328,7 @@ Get-Service sshd
 
 **Résultat attendu :**
 
-```bash
+```
 Status   Name               DisplayName
 ------   ----               -----------
 Running  sshd               OpenSSH SSH Server
@@ -471,7 +470,7 @@ netstat -an | findstr :22
 
 **Résultat attendu :**
 
-```bash
+```
 TCP    0.0.0.0:22             0.0.0.0:0              LISTENING
 TCP    [::]:22                [::]:0                 LISTENING
 ```
@@ -493,7 +492,7 @@ Le site officiel : [https://www.7-zip.org](https://www.7-zip.org)
 
 Si **Winget** est disponible (Windows Server 2022, 2025, ou si tu l’as ajouté manuellement) :
 
-```bash
+```
 winget install 7zip.7zip
 ```
  *7-Zip s’ajoute automatiquement au menu clic droit de l’Explorateur.*
@@ -501,7 +500,7 @@ winget install 7zip.7zip
 ---
 #### Installation sur Ubuntu
 
-````bash
+````
 sudo apt-get install p7zip
 ````
 ---
@@ -565,21 +564,21 @@ sudo nano /etc/fstab
 
 ---
 Une fois dans ce fichier nous allons ajouter ces deux lignes :
-```bash
+```
 //win01/Commun /mnt/Commun/win01 cifs credentials=/etc/smb-partage-creds 0 0
-//svrwin01/Commun /mnt/Commun/win01/svrwin01 cifs credentials=/etc/smb-partage-creds 0 0
+//svrwin01/Commun /mnt/Commun/win01/svrwin01 cifs credentials=/etc/smb-partage
 ```
 > *Ensuite , sauvegardez le fichier (**CTRL+0** puis **ENTER**) et quittez (**CTRL+X**)*
 
 ---
 Maintenant, on va créé le fichier **/etc/smb-partage-creds**, il va nous servir à stocker les utilisateurs et mot de passe.
-```bash
+```
 sudo nano /etc/smb-partage-creds
 ```
 
 ---
 Dans ce fichier indiquez le nom d'utilisateur et le mot de passe de votre compte Windows comme ceci :
-```bash
+```
 username=wilder
 password=Azerty1*
 ```
@@ -587,7 +586,7 @@ password=Azerty1*
 
 ---
 Pour **éviter les accès non autorisés**,modifions les permissions sur ce fichier avec cette commande :
-```bash
+```
 sudo chmod 600 /etc/smb-partage-creds
 ```
 
