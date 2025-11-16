@@ -23,7 +23,7 @@ Laisse le **niveau de compression** sur _Normal_, la **méthode de compression**
 Pour mettre à jour une archive existante, relance la commande **Ajouter à l’archive…** depuis le dossier d’origine et garde le mode _Ajouter et remplacer les fichiers_.
 Ppour ouvrir une archive avec **7-Zip → Ouvrir l’archive** pour en afficher le contenu, tester son intégrité ou supprimer certains fichiers sans tout extraire.
 
-![[extraire_le _zip.jpg]]
+![[extraire_le _zip.jpg]](Ressources/extraire_le _zip.jpg)
 
 
 
