@@ -88,9 +88,11 @@ Franck et Fréderick se sont penchés sur la mise en place d'outils permettants 
 | Frederick flavil | SM         | Mise en place et protocole d'attaque avec Hashcat              |
 | Renaud Michel    | PO         | Test solution logicielle mise en place par Franck et Frederick |
 
- Cette deuxième semaine de projet va nous permettre de finaliser l'attaque avec le logiciel john the Ripper, nous avons tous mis en place le dispositif établi par Franck et nous avons réussi le cassage du hash pour des mots de passe simple .
- Avec l'utilisation du logiciel 7 zip nous avons convenu de protéger les deux fichiers en type .zip et chiffrage en AES 256.
- John the ripper , lorsqu'il visualise le fichier .zip reconnait les caractéristiques de ces protections et nous propose de les utiliser en option . Son utilisation est plutôt simple une fois le fichier récupéré et le hash sorti .
+
+---
+
+Cette deuxième semaine de projet va nous permettre de finaliser l'attaque avec le logiciel john the Ripper, nous avons tous mis en place le dispositif établi par Franck et nous avons réussi le cassage du hash pour des mots de passe simple .Avec l'utilisation du logiciel 7 zip nous avons convenu de protéger les deux fichiers en type .zip et chiffrage en AES 256.
+John the ripper , lorsqu'il visualise le fichier .zip reconnait les caractéristiques de ces protections et nous propose de les utiliser en option . Son utilisation est plutôt simple une fois le fichier récupéré et le hash sorti.
 ---
 # ⚙️ Choix techniques
 <span id="choix-techniques"></span>
