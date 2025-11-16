@@ -148,7 +148,7 @@ Problème 4 -le point de montage se perd à chaque extinction de la machine
 probleme 1 -téléchargement d'une wordlist plus conséquentes pour que l'attaque soit plus efficace.
 
 probleme 2 -Installation de Samba et de cifs sur pc client Linux, création du fichier /etc/smb-partage-creds pour mémoriser mot de passe user 
-Problème 3 ---voir améliorations possibles--
+Problème 3 --voir améliorations possibles--
 
 Problème 4 -Montage automatique au démarrage avec la modification du fichier fstab .
 
