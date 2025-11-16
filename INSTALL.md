@@ -539,8 +539,6 @@ winget install 7zip.7zip
 ````
 sudo apt-get install p7zip
 ````
----
-### 4.3. Le point de montage
 
 ## 5. FAQ
 <span id="FAQ"></span>
