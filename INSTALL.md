@@ -328,13 +328,13 @@ sudo apt install -y p7zip-full
 
 *un exemple de création en CLI*
 
-![[creation_archive_ubuntu.jpg]]
+![[creation_archive_ubuntu.jpg]](Ressources/creation_archive_ubuntu.jpg)
 
 ---
 
 *un exemple d' extraction en CLI*
 
-![[extraction_archive_ubuntu.jpg]]
+![[extraction_archive_ubuntu.jpg]](Ressources/extraction_archive_ubuntu.jpg)
 
 ---
 
