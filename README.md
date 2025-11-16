@@ -1,5 +1,5 @@
 
-![Ressources/3 logos.jpg](Ressources/3logos.jpg){width=300 height=200}
+![Ressources/3 logos.jpg](Ressources/3logos.jpg){width=30 height=20}
 
 ## Sommaire 
 
@@ -128,7 +128,7 @@ Hashcat est distribué sous licence MIT.
 Le logiciel Hashcat est installé sur un serveur Linux Debian
 le logiciel Semba pour permettre à UBU01 de récupérer le file1.zip sur WIN 01.
 
-![](Ressources/hashcat.jpg){width=50 height=50}
+![](Ressources/hashcat.jpg){height=420}
 # 🧗 Difficultés rencontrées
 <span id="difficultes-rencontrees"></span>
 ## *John the ripper* 
