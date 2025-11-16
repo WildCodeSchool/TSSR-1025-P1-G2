@@ -1,5 +1,5 @@
 
-![Ressources/3 logos.jpg](Ressources/3logos.jpg){width=30 height=20}
+![Ressources/3 logos.jpg](Ressources/3logos.jpg)
 
 ## Sommaire 
 
@@ -113,8 +113,7 @@ Une machine sous Linux Debian "SRVLX01" ip local 172.16.10.6 équipé en logicie
 
 
 ## **Logiciel** 
-![](Ressources/7ZIP.png){width=300 height=200}
-
+![](Ressources/7ZIP.png)
 **7-Zip** ( v25.0.1) est un logiciel gratuit d'archivage de fichiers avec un taux de compression très élevéet une possibilité de protection renforcée. C'est un logiciel **open source**. La plupart du code est sous licence **GNU LGPL**. Vous pouvez utiliser 7-Zip sur n'importe quel ordinateur, y compris dans les organisations commerciales. Il n'est pas nécessaire de s'enregistrer ou payer pour utiliser 7-Zip.
 photo 7 zip
 
