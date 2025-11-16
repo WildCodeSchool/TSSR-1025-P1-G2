@@ -85,8 +85,8 @@ Franck et Fréderick se sont penchés sur la mise en place d'outils permettants 
 
 | Membre           | Rôle       | Missions                                                       |
 | ---------------- | ---------- | -------------------------------------------------------------- |
-| Franck Paisant   | Technicien | Finalisation de la doc et du user guide de John  the Ripper    |
-| Frederick flavil | SM         | Mise en place et protocole d'attaque avec Hashcat              |
+| Franck Paisant   | SM         | Finalisation de la doc et du user guide de John  the Ripper    |
+| Frederick flavil | Technicien | Mise en place et protocole d'attaque avec Hashcat              |
 | Renaud Michel    | PO         | Test solution logicielle mise en place par Franck et Frederick |
 
 Cette deuxième semaine de projet va nous permettre de finaliser l'attaque avec le logiciel john the Ripper, nous avons tous mis en place le dispositif établi par Franck et nous avons réussi le cassage du hash pour des mots de passe simple .Avec l'utilisation du logiciel 7 zip nous avons convenu de protéger les deux fichiers en type .zip et chiffrage en AES 256.
@@ -102,11 +102,11 @@ John the ripper , lorsqu'il visualise le fichier .zip reconnait les caractérist
 
 Pour effectuer ce projet, nous avons 4 machines virtuelles connectées entre elle sur un réseau local 172.16.10.0/24. leurs pare feu sont désactivés.
 
-Une machine sous Windows serveur "SRVWIN01"  ip local:172.16.10.5  équipé en 7zip,Semba,OpenSSh.
+Une machine sous Windows serveur "SRVWIN01"  ip local:172.16.10.5  équipé en 7zip,Samba,OpenSSh.
 
-Une machine sous Windows 11" WIN01" ip local 172.16.10.10 équipé en 7zip,Semba,OpenSSh.
+Une machine sous Windows 11" WIN01" ip local 172.16.10.10 équipé en 7zip,Samba,OpenSSh.
 
-Une machine sous Ubuntu" UBU01" ip local 172.16.10.20 equipé en John the Ripper, Semba, 7zip.
+Une machine sous Ubuntu" UBU01" ip local 172.16.10.20 equipé en John the Ripper, Samba, 7zip.
 
 Une machine sous Linux Debian "SRVLX01" ip local 172.16.10.6 équipé en logiciel Hashcat, OpenSSh, 7zip.
 
