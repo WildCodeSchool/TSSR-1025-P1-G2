@@ -121,14 +121,14 @@ photo 7 zip
 **John the Ripper** (v1.9.0) (ou _JTR_, ou _John_) est un [logiciel libre](https://fr.wikipedia.org/wiki/Logiciel_libre "Logiciel libre"), utilisé notamment pour tester la sécurité d'un mot de passe ([audit](https://fr.wikipedia.org/wiki/Audit_informatique "Audit informatique"), [crack](https://fr.wikipedia.org/wiki/Crack_\(informatique\) "Crack (informatique)")). D'abord développé pour tourner sous les systèmes dérivés d'UNIX, le programme fonctionne aujourd'hui sous une cinquantaine de plates-formes différentes, telles que [BeOS](https://fr.wikipedia.org/wiki/BeOS "BeOS"), [BSD](https://fr.wikipedia.org/wiki/Berkeley_Software_Distribution "Berkeley Software Distribution") et ses dérivés, [DOS](https://fr.wikipedia.org/wiki/DOS "DOS"), [Linux](https://fr.wikipedia.org/wiki/Linux "Linux"), [OpenVMS](https://fr.wikipedia.org/wiki/OpenVMS "OpenVMS"), [Win32](https://fr.wikipedia.org/wiki/Microsoft_Windows "Microsoft Windows")…
 Il est  conçu pour casser des mots de passe, c’est-à-dire retrouver le mot de passe original à partir de son empreinte (ou _hash_). Il fonctionne en testant rapidement des milliers, voire des millions de combinaisons, grâce à différentes techniques comme les attaques par dictionnaire ou force brute.
 
-![](Ressources/7ZIP.png){width=300 height=200}
+![](Ressources/JTR.png){width=300 height=200}
 
 **Hashcat** ( v7.0.0) est l'utilitaire de récupération de mots de passe le plus rapide et le plus avancé au monde. Il prend en charge cinq modes d'attaque uniques pour plus de 300 algorithmes de hachage hautement optimisés. hashcat est compatible avec les processeurs, les cartes graphiques et autres accélérateurs matériels sous Linux, Windows et macOS, et offre des fonctionnalités facilitant le craquage de mots de passe distribué.
 Hashcat est distribué sous licence MIT. 
 Le logiciel Hashcat est installé sur un serveur Linux Debian
 le logiciel Semba pour permettre à UBU01 de récupérer le file1.zip sur WIN 01.
 
-photo Hashcat
+![](Ressources/hashcat.jpg){width=100 height=50}
 # 🧗 Difficultés rencontrées
 <span id="difficultes-rencontrees"></span>
 ## *John the ripper* 
