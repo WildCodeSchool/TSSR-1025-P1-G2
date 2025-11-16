@@ -1,5 +1,5 @@
 
-![](Ressources/3 logos.jpg)
+![Ressources/3 logos.jpg](Ressources/3 logos.jpg)align="right" width="125"
 
 ## Sommaire 
 
