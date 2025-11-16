@@ -1,4 +1,4 @@
-![[3 logos.jpg]](Ressources/3 logos.jpg)
+(Ressources/3 logos.jpg)
 
 ## Sommaire 
 
