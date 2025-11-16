@@ -23,7 +23,7 @@ Laisse le **niveau de compression** sur _Normal_, la **méthode de compression**
 Pour mettre à jour une archive existante, relance la commande **Ajouter à l’archive…** depuis le dossier d’origine et garde le mode _Ajouter et remplacer les fichiers_.
 Ppour ouvrir une archive avec **7-Zip → Ouvrir l’archive** pour en afficher le contenu, tester son intégrité ou supprimer certains fichiers sans tout extraire.
 
-![[extraire_le _zip.jpg]](Ressources/extraire_le _zip.jpg)
+![[extraire_le _zip.jpg]](extraire_le_zip.jpg)
 
 
 
@@ -43,7 +43,7 @@ Ppour ouvrir une archive avec **7-Zip → Ouvrir l’archive** pour en afficher 
 1. Clique droit sur ton dossier
 2. **7-Zip → Ajouter à l’archive…**
 3. Dans la fenêtre : 
-![[formatzip.jpg]]
+![[formatzip.jpg]](formatzip.jpg)
 
 
 4. Laisse les différentes options sur" défauts" et choisis le format de l'archive et la méthode de chiffrement  : _( la plus sure actuellement est l'AES 256)_
@@ -82,9 +82,7 @@ Entre le mot de passe
 clique sur Ok  
 
 
-![[ouvrir_zip.png]]
-
-![[ouvrir zip.png]
+![[ouvrir_zip.png]](ouvrir-zip.png)
 
 
 
@@ -138,7 +136,7 @@ Voici les différents modes possibles :
 
 - L’option **« Format de l'archive»** détermine **le type de fichier compressé à créer** — c’est-à-dire **la structure et les capacités** de l’archive (vitesse, taux de compression, chiffrement, compatibilité, etc.).
 
-![[differents_format_archives.jpg]]!
+![[differents_format_archives.jpg]](differents_format_archives.jpg)
 
 Par défaut, 7-Zip ne garde **que la date de modification**, donc la date de dernière modification est préservée **mais** la date de création et celle du dernier accès sont perdues.
 C’est un **problème en archivage technique ou légal**, où la date de création ou d’accès à une valeur est  importante.
@@ -158,8 +156,8 @@ exemple :
 ## Q : quels sont les différents formats d'archives ?
 
 L’option **« Format de l'archive»** détermine **le type de fichier compressé à créer** — c’est-à-dire **la structure et les capacités** de l’archive (vitesse, taux de compression, chiffrement, compatibilité, etc.).
-(Ressources/format_archive.png)
-![[differents_format_archives.jpg]]
+
+![[differents_format_archives.jpg]](Ressources/format_archive.png)
 Par défaut, 7-Zip ne garde **que la date de modification**, donc la date de dernière modification est préservée **mais** la date de création et celle du dernier accès sont perdues.
 C’est un **problème en archivage technique ou légal**, où la date de création ou d’accès à une valeur est  importante.
 exemple :
@@ -169,7 +167,7 @@ exemple :
 - 
 ### Q : qu'est ce qu'une Archive wim ?
 
-![[wim.jpg]]
+![[wim.jpg]](wim.jp)
 
 les options de format TAR / WIM  permettent d’enregistrer aussi les liens symboliques, liens physiques, ACL (Access Control List), NTFS(système de fichiers des systèmes Windows). 
 
