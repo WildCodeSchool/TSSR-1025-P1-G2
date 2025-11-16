@@ -88,28 +88,30 @@ Franck et Fréderick se sont penchés sur la mise en place d'outils permettants 
 | Frederick flavil | SM         | Mise en place et protocole d'attaque avec Hashcat              |
 | Renaud Michel    | PO         | Test solution logicielle mise en place par Franck et Frederick |
 
-
----
-
 Cette deuxième semaine de projet va nous permettre de finaliser l'attaque avec le logiciel john the Ripper, nous avons tous mis en place le dispositif établi par Franck et nous avons réussi le cassage du hash pour des mots de passe simple .Avec l'utilisation du logiciel 7 zip nous avons convenu de protéger les deux fichiers en type .zip et chiffrage en AES 256.
 John the ripper , lorsqu'il visualise le fichier .zip reconnait les caractéristiques de ces protections et nous propose de les utiliser en option . Son utilisation est plutôt simple une fois le fichier récupéré et le hash sorti.
+
+
 ---
+
+
 # ⚙️ Choix techniques
 <span id="choix-techniques"></span>
 ## **Matériel**
 
 Pour effectuer ce projet, nous avons 4 machines virtuelles connectées entre elle sur un réseau local 172.16.10.0/24. leurs pare feu sont désactivés.
 
-Une machine sous Windows serveur "SRVWIN01"  ip local:172.16.10.5 
-- 7zip
-Une machine sous Windows 11" WIN01" ip local 172.16.10.10 
-- 7zip
- Une machine sous Ubuntu" UBU01" ip local 172.16.10.20 
-- logiciel John the Ripper, Semba, 7zip.
-Une machine sous Linux Debian "SRVLX01" ip local 172.16.10.6 
-- logiciel Hashcat, OpenSSh, 7zip.
+Une machine sous Windows serveur "SRVWIN01"  ip local:172.16.10.5  équipé en 7zip,Semba,OpenSSh.
 
-**Logiciel** 
+Une machine sous Windows 11" WIN01" ip local 172.16.10.10 équipé en 7zip,Semba,OpenSSh.
+
+Une machine sous Ubuntu" UBU01" ip local 172.16.10.20 equipé en John the Ripper, Semba, 7zip.
+
+Une machine sous Linux Debian "SRVLX01" ip local 172.16.10.6 équipé en logiciel Hashcat, OpenSSh, 7zip.
+
+
+
+## **Logiciel** 
 
 **7-Zip** ( v25.0.1) est un logiciel gratuit d'archivage de fichiers avec un taux de compression très élevéet une possibilité de protection renforcée. C'est un logiciel **open source**. La plupart du code est sous licence **GNU LGPL**. Vous pouvez utiliser 7-Zip sur n'importe quel ordinateur, y compris dans les organisations commerciales. Il n'est pas nécessaire de s'enregistrer ou payer pour utiliser 7-Zip.
 photo 7 zip
@@ -129,24 +131,24 @@ photo Hashcat
 <span id="difficultes-rencontrees"></span>
 ## *John the ripper* 
 
-1) Pour une attaque par dictionnaire la liste original de *John* est trop limité et il faut avoir des listes de mots de dictionnaire plus conséquentes.
+problème 1 -Pour une attaque par dictionnaire la liste original de *John* est trop limité et il faut avoir des listes de mots de dictionnaire plus conséquentes.
 
-2) Communication entre le PC client Linux et le PC client et serveur Windows
+problème 2 -Communication entre le PC client Linux et le PC client et serveur Windows
 
-3) )Le point de montage sur le PC cible nous a amené vers une solution que s'avèrerait peu efficace et peu pratique  si nous avions à monter plus de deux machines car nous montons le serveur SERWIN01 dans le dossier ou nous avons monté le client WIN01. c'est fonctionnel mais à améliorer : _cd /mnt/Commun/win01/svrwin01 / machine 3 /machine 4..._
+Problème 3 -Le point de montage sur le PC cible nous a amené vers une solution que s'avèrerait peu efficace et peu pratique  si nous avions à monter plus de deux machines car nous montons le serveur SERWIN01 dans le dossier ou nous avons monté le client WIN01. c'est fonctionnel mais à améliorer : _cd /mnt/Commun/win01/svrwin01 / machine 3 /machine 4..._
 
-4) le point de montage se perd à chaque extinction de la machine 
+Problème 4 -le point de montage se perd à chaque extinction de la machine 
 
 # 💡 Solutions trouvées
  <span id="solutions-trouvees"></span>
 ## *John the ripper* 
 
-1) téléchargement d'une wordlist plus conséquentes pour que l'attaque soit plus efficace.
+probleme 1 -téléchargement d'une wordlist plus conséquentes pour que l'attaque soit plus efficace.
 
-2) Installation de Samba et de cifs sur pc client Linux, création du fichier /etc/smb-partage-creds pour mémoriser mot de passe user 
-3) --voir améliorations possibles--
+probleme 2 -Installation de Samba et de cifs sur pc client Linux, création du fichier /etc/smb-partage-creds pour mémoriser mot de passe user 
+Problème 3 ---voir améliorations possibles--
 
-4) Montage automatique au démarrage avec la modification du fichier fstab .
+Problème 4 -Montage automatique au démarrage avec la modification du fichier fstab .
 
 <span id="solutions-trouvees"></span>
 
@@ -155,4 +157,4 @@ photo Hashcat
 <span id="ameliorations-possibles"></span>
 ## *John the ripper* 
 
-3) Modification du chemin et création d'un dossier commun"XX" par machine à monter pour éviter que les dossiers s'enchainent en cascade . 
+Problème 3 -Modification du chemin et création d'un dossier commun"XX" par machine à monter pour éviter que les dossiers s'enchainent en cascade . 
