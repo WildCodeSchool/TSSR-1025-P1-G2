@@ -68,7 +68,7 @@ Cette approche permet d'examiner les mots de passe existants et de proposer des 
 
 |  Franck Paisant  |     PO     | Dialogue avec dominique /mise en place du logiciel  Hashcat/                |
 | :--------------: | :--------: | --------------------------------------------------------------------------- |
-| Frederick flavil |     SM     | Création du tableau Trello/mise en place du logiciel John the Ripper/       |
+|  |     SM     | Création du tableau Trello/mise en place du logiciel John the Ripper/       |
 |  Renaud Michel   | Technicien | rédaction du fichier Readme/ recherche sur le chiffrement des mots de passe |
 
 Franck notre PO ( product owner) a bien cerné le projet et les incertitudes du débuts ont été levées après plusieurs discussions avec Dominique notamment sur le rôle un peu flou de chaque machine au début.
@@ -86,7 +86,7 @@ Franck et Fréderick se sont penchés sur la mise en place d'outils permettants 
 | Membre           | Rôle       | Missions                                                       |
 | ---------------- | ---------- | -------------------------------------------------------------- |
 | Franck Paisant   | SM         | Finalisation de la doc et du user guide de John  the Ripper    |
-| Frederick flavil | Technicien | Mise en place et protocole d'attaque avec Hashcat              |
+|  | Technicien | Mise en place et protocole d'attaque avec Hashcat              |
 | Renaud Michel    | PO         | Test solution logicielle mise en place par Franck et Frederick |
 
 Cette deuxième semaine de projet va nous permettre de finaliser l'attaque avec le logiciel john the Ripper, nous avons tous mis en place le dispositif établi par Franck et nous avons réussi le cassage du hash pour des mots de passe simple .Avec l'utilisation du logiciel 7 zip nous avons convenu de protéger les deux fichiers en type .zip et chiffrage en AES 256.
